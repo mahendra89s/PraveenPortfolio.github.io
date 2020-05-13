@@ -1,0 +1,15 @@
+.thumbnail{
+    width:100%;
+    overflow: hidden;
+}
+.text-center{
+    text-align: center !important;
+}
+.img-fluid{
+    max-width:100%;
+    height:auto;
+    margin-bottom: 10px;
+}
+.modal-content img {
+    height: 90vh;
+  }

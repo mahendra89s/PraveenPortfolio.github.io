@@ -1,0 +1,59 @@
+<?php
+    session_start();
+    include_once "common/config.php";
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__content row">
+
+            
+            
+
+            
+
+
+            <a class="header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
+
+            <nav class="header__nav-wrap">
+
+                <h2 class="header__nav-heading h6">Site Navigation</h2>
+
+                <div class="col-3   nopadding" >
+            <div id="side_navbar">
+            <ul id="slide-out" class="side-nav sidebar">
+                <li><div class="sideimg mt-4"><img src="./images/about.jpg" width=150px height=150px/></div></li>
+                <li><h4>Mahendra Sutar</h4></li>
+                <li><div class="icon_mail"><i class="material-icons">account_box</i> <p >mahendrasutar8.ms@gmail.com</p></div></li>
+                
+                <li class="active"><img src="./icons/Intro.png" width=30px height=30px/><a href="#" >Introduction</a></li>
+                <li><img src="./icons/about.png" width=30px height=30px/><a href="#about_us" >About</a></li>
+                <li><img src="./icons/time.png" width=30px height=30px/><a href="#">Timeline</a></li>
+            </ul>
+            <hr/>
+            <ul class="social_icon">
+                  <li class="pt-2"><a href="#"><img src="./icons/fb.png" width=30px height=30px/></a></li>
+                  <li class="pt-2"><a href="#" ><img src="./icons/twit.png" width=30px height=30px/></a></li>
+                  <li class="pt-2"><a href="#" ><img src="./icons/inst.png" width=30px height=30px/></a></li>
+                  <li class="pt-2"><a href="#" ><img src="./icons/in.png" width=30px height=30px/></a></li>
+                  
+            </ul>
+        </div>
+        </div>
+
+                <a href="#0" title="Close Menu" class="header__overlay-close close-mobile-menu">Close</a>
+
+            </nav> <!-- end header__nav-wrap -->
+
+        </div> <!-- header-content -->
+    </header> <!-- header -->
+</body>
+</html>

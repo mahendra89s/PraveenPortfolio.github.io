@@ -1,0 +1,37 @@
+.thumbnail{
+    width:100%;
+    overflow: hidden;
+}
+.text-center{
+    text-align: center !important;
+}
+.img-fluid{
+    max-width:100%;
+    height:auto;
+    margin-bottom: 10px;
+}
+.modal-content img {
+    height: 90vh;
+  }
+.fade1{
+    position: relative;
+}
+.fade1::after{
+    content:'IMAGE';
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:30px;
+    background: black;
+    width:100%;
+    height: calc(100% - 10px);
+    position: absolute;
+    top:0;
+    left:0;
+    opacity:0;
+    transition: opacity 0.5s ease;
+}
+.fade1:hover::after{
+    opacity:0.5;
+}

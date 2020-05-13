@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="para">HEY</h1>
+
+    <script>
+        var x = document.getElementById('para');
+        var num = 1;
+        setInterval(function () {
+            var y = x.innerHTML;
+
+            if (y.localeCompare("HEY") == 0) {
+                x.innerHTML = "BYE";
+            };
+            if (y.localeCompare("BYE") == 0) {
+                x.innerHTML = "HEY";
+            };
+        }, 1000);
+
+    </script>
+</body>
+
+</html>

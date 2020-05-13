@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<HTML>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+  <link rel="stylesheet" href="style2.css" />
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&display=swap" rel="stylesheet">
+  <!-- font End-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/eb3c054dd9.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+    crossorigin="anonymous"></script>
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- <link rel="stylesheet" href="https://egkoppel.github.io/product-sans/google-fonts.css"> -->
+  <title>PortFolio Website</title>
+</head>
+
+<body onload="loading()">
+  <div id="loading"></div>
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12  nopadding navbar_side visible">
+        <div id="side_navbar">
+          <div id="close_bar">
+            <button type="button" id="menu_close"><i class="fas fa-times fa-3x" style="color:black;"></i></button>
+          </div>
+          <ul id="slide-out" class="side-nav sidebar">
+
+            <li>
+              <div class="sideimg mt-4"><img src="./images/praveen.jpeg" width=150px height=150px /></div>
+            </li>
+            <li>
+              <h4>Praveen Sutar</h4>
+            </li>
+            <li>
+              <div class="icon_mail"><i class="material-icons">account_box</i>
+                <p>praveensutar302@gmail.com</p>
+              </div>
+            </li>
+
+            <li class="active"><img src="./icons/Intro.png" width=30px height=30px /><a href="#">Introduction</a></li>
+            <li><img src="./icons/about.png" width=30px height=30px /><a href="#about_us">About</a></li>
+            <li><img src="./icons/time.png" width=30px height=30px /><a href="#contact_des">Contact </a></li>
+          </ul>
+          <hr />
+          <ul class="social_icon">
+            <li class="pt-2"><a href="#"><img src="./icons/fb.png" width=30px height=30px /></a></li>
+            <li class="pt-2"><a href="#"><img src="./icons/twit.png" width=30px height=30px /></a></li>
+            <li class="pt-2"><a href="https://www.instagram.com/praveen_32/?hl=en" target="_blank"><img
+                  src="./icons/inst.png" width=30px height=30px /></a></li>
+            <li class="pt-2"><a href="#"><img src="./icons/in.png" width=30px height=30px /></a></li>
+
+          </ul>
+        </div>
+      </div>
+
+
+
+      <div class="col-xl-9 col-lg-12 col-md-12 nopadding col-sm-12">
+        <div class="menu-bar "><button type="button" id="menubar"><i class="fas fa-bars fa-3x"
+              style="color:black;"></i></button></div>
+
+        <!-- <button type="button" class="btn btn-primary" id="btn1" onclick="openNav()">Open</button> -->
+        <!-- main Page -->
+
+
+
+        <div class="mainpage adjust_width ml-3 pl-3">
+
+
+          <div class="mainpg_content">
+            <div class="nameban1">
+              <h3>HEY</h3>
+              <h1>I AM Praveen</h1>
+              <h3>Architectural and Interior Designer</h3>
+            </div>
+            <div class="nameban2" style="display: none;padding:0px;margin:0;">
+              <h3>I</h3>
+              <h1>Love Building</h1>
+              <h3>Things!!!</h3>
+            </div>
+            <div class="mainpage_btn">
+              <button type="button">HIRE ME</button>
+              <button type="button">GET CV</button>
+            </div>
+          </div>
+          <div class="mainpage_image">
+            <img class="pgimg" src="./banner-image.png" width=500 height=500>
+
+          </div>
+
+
+
+        </div>
+
+
+
+
+        <!-- main Page End-->
+        <div id="about_us" class="adjust_width">
+          <div class="container mt-5" data-aos="fade-right" data-aos-duration="5000" data-aos-offset="200"
+            data-aos-easing="ease-in-out-quart">
+            <h3 style="color:#616161">About Us</h3>
+            <h1 class="mt-4" style="font-weight: bold;">Who am I?</h1>
+            <p class="mt-4" style="text-align:justify;">
+              I am a computer grad student from DAIICT-Gandhinagar with ICT as my major.I love exploring new
+              technologies and often amazed by the progress we as a human species have mad so far in the recent years
+              (apart from the headphone-jack part!!)
+            </p>
+            <p class="mt-4" style="text-align:justify;">
+              I have started reflecting my ideas and thougths through the medium of words recently so spelling and
+              grammer mistaks are very often.You can write me back if you spot any and don't want to live anymore
+            </p>
+          </div>
+          <div class="container mt-5" data-aos="fade-right" data-aos-duration="5000" data-aos-offset="200">
+
+            <h1 class="mt-4" style="font-weight: bold;">What I do?</h1>
+            <div class="contaianer">
+              <div class="row" id="card">
+                <div class="card text-white bg-dark mb-3 mr-4" style="max-width: 18rem;">
+                  <div class="card-header">WEB DEVELOPMENT</div>
+                  <div class="card-body">
+
+                    <p class="card-text">I have experience building websites and chrome extentions using
+                      JavaScript,React,HTML,CSS</p>
+                  </div>
+                </div>
+                <div class="card text-white bg-dark mb-3 mr-4" style="max-width: 18rem;">
+                  <div class="card-header">DATA STRUCTURES & ALGORITHMS</div>
+                  <div class="card-body">
+
+                    <p class="card-text">As coming from the CS background, I have good grasp over fundamental concepts
+                      of DSA</p>
+                  </div>
+                </div>
+                <div class="card text-white bg-dark mb-3 mr-4" style="max-width: 18rem;">
+                  <div class="card-header">DEV OPS</div>
+                  <div class="card-body">
+
+                    <p class="card-text">I am pursuing my internship with DevOps team at Juniper and working with tools
+                      like Jenkins, Docker, K8s</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="images adjust_width" data-aos="fade-right" data-aos-duration="5000" data-aos-offset="200">
+            <div class="container mt-5">
+              <h1 style="font-weight: bold;">MY WORK</h1>
+              <a href="mywork.html"><button class="btn btn-dark my-5 ml-5">MY WORK</button></a>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div id="contact_des" class="adjust_width" data-aos="fade-right" data-aos-duration="5000" data-aos-offset="200">
+          <h1 class="mt-4 mb-4">Contact Us</h1>
+        </div>
+        <form name="form" id="form" method="post" action="contact.php" onsubmit="return validate()">
+          <div class="contact_us adjust_width" data-aos="fade-right" data-aos-duration="5000" data-aos-offset="200">
+
+            <div class="container">
+              <div class="row">
+
+                <div class="col1 col-lg-6 col-sm-12">
+                  <input type="text" name="name" class="form-control mb-4" id="contact_name"
+                    aria-describedby="emailHelp" placeholder="Enter Name" required>
+                  <input type="email" name="email" class="form-control mb-4" id="contact_email"
+                    aria-describedby="emailHelp" placeholder="Enter Email" required>
+                  <input type="text" name="mobile" class="form-control mb-4" id="contact_mobile"
+                    aria-describedby="emailHelp" placeholder="Enter Mobile No.">
+                </div>
+                <div class="col2 col-lg-6 col-sm-12 contact_form_texta_btn">
+                  <textarea type="text" name="comment" class="form-control mb-4" id="contact_comment" rows="3"
+                    placeholder="Comment" required></textarea>
+                  <button type="submit" class="btn" id="btn">Submit</button>
+                </div>
+                <span id="errormsg" style="color:red;"></span>
+              </div>
+            </div>
+
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <!--Page Content Ends-->
+  </div>
+  </div>
+  </div>
+
+  </div>
+  <script>
+    $(document).ready(function () {
+      $('#menu_close').click(function () {
+        $('.navbar_side').addClass("visible");
+      });
+    });
+    $(document).ready(function () {
+      $('#menubar').click(function () {
+        $('.navbar_side').removeClass("visible");
+      });
+    });
+
+    $(document).ready(function () {
+      $('#menu_close').click(function () {
+        $('.mainpage,#about_us, .contact_us, #contact_des').addClass("adjust_width");
+      });
+    });
+    $(document).ready(function () {
+      $('#menubar').click(function () {
+        $('.mainpage, #about_us, .contact_us, #contact_des').removeClass("adjust_width");
+      });
+    });
+
+    // AJAX
+    $(function () {
+      $('#form').on("submit", function (e) {
+        $('#btn').html(`<img src ="images/11.gif" />  Submitting...`);
+        e.preventDefault();
+        $.ajax({
+          type: "post",
+          url: "contact.php",
+          data: $(this).serialize(),
+          success: function (response) {
+            if (response == "Mail sent!!!") {
+              alert("Form Submitted Successfully!!!");
+              $('#btn').html("Submit");
+            }
+            else { alert("Form Failed to Submit!!!"); }
+          },
+          error: function (response) { alert(response); }
+
+        });
+      });
+    });
+
+
+
+  </script>
+  <script>
+
+    var preloader = document.getElementById('loading');
+    function loading() {
+      preloader.style.display = 'none';
+    };
+
+
+    var name1 = document.querySelector(".nameban1");
+    var name2 = document.querySelector(".nameban2");
+    setInterval(function () {
+      // name2.style.display = "block";
+      // name1.style.display = "none";
+      if (name2.style.display == "none") {
+        name2.style.display = "";
+        name1.style.display = "none";
+
+      }
+      else if (name1.style.display == "none") {
+        name1.style.display = "";
+        name2.style.display = "none";
+      };
+    }, 3000);
+
+    function validate() {
+      var name = document.getElementById('contact_name').value;
+      var email = document.getElementById('contact_email').value;
+      var atposition = email.indexOf("@");
+      var dotposition = email.lastIndexOf(".");
+      var comment = document.getElementById('contact_comment').value;
+
+      if (name == "" || comment == "" || atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= x.length) {
+        document.getElementById('errormsg').innerHTML = "Please Enter Valid Details!!!";
+        return false;
+      }
+      // if(name == "" )
+      // {
+      //   document.getElementById('errormsg').innerHTML="Please Enter Valid Detail!!!";
+      //   return false;
+      // }
+      // if(atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length)
+      // {
+      //   document.getElementById('errormsg').innerHTML="Please Enter Valid Email!!!";
+      //   return false;
+      // }
+      // if(comment == "")
+      // {
+      //   document.getElementById('errormsg').innerHTML="Please Enter Comment!!!";
+      //   return false;
+      // }
+
+    }
+
+
+
+
+
+
+
+  </script>
+  <!-- // ANIMATION -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+    integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+    integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+  <script src="app2.js"></script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" />
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"/>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"/>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"/>
+        
+</body>
+</HTML>
