@@ -11,11 +11,12 @@ const tl = new TimelineMax();
 
 tl.fromTo(mainpg, 2, { x: "-120%" }, { x: "0%", ease: Power2.easeInOut })
     .fromTo(menubar, 2, { x: "-200%" }, { x: "0%", ease: Power2.easeInOut }, "-=2")
-    .fromTo(pgimg, 2, { opacity: 0 }, { opacity: 1, ease: Power2.easeInOut }, "-=2");
+    .fromTo(pgimg, 2, { scale: 0 }, { scale: 1, ease: Bounce.easeOut }, "-=2");
 
 const btn = document.querySelector('#menubar');
 btn.onclick = function () {
     tl.fromTo(side_navbar, 1, { x: "-100%" }, { x: "0%", ease: Power2.easeInOut });
 }
 
-    // tl.fromTo(mainpg_content, 2, { width: "0%" }, { width: "98.6vw", ease: Power2.easeInOut })
+
+// footer animation

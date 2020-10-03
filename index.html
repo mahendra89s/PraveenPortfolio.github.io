@@ -25,6 +25,7 @@
 </head>
 
 <body>
+
   <div class="container-fluid">
 
     <div class="row">
@@ -113,13 +114,14 @@
               grammer mistaks are very often.You can write me back if you spot any and don't want to live anymore
             </p>
           </div>
-          <div class="container mt-5" data-aos="fade-right" data-aos-duration="5000" data-aos-offset="200">
+          <div class="container mt-5">
 
-            <h1 class="mt-4" style="font-weight: bold;">What I do?</h1>
+            <h1 class="mt-4" style="font-weight: bold;" data-aos="fade-right" data-aos-duration="5000"
+              data-aos-offset="200">What I do?</h1>
             <div class="contaianer">
               <div class="row" id="card">
-                <div class="card text-white bg-dark mb-3 mr-4"
-                  style="max-width: 18rem;height:15rem;box-shadow:  0 8px 16px 0 #424242;">
+                <div class="card text-white bg-dark mb-3 mr-4" data-aos="zoom-in-up" data-aos-duration="5000"
+                  data-aos-offset="400" style="max-width: 18rem;height:15rem;box-shadow:  0 8px 16px 0 #424242;">
                   <div class="card-header">WEB DEVELOPMENT</div>
                   <div class="card-body">
 
@@ -127,8 +129,8 @@
                       JavaScript,React,HTML,CSS</p>
                   </div>
                 </div>
-                <div class="card text-white bg-dark mb-3 mr-4"
-                  style="max-width: 18rem;height:15rem;box-shadow:  0 8px 16px 0 #424242;">
+                <div class="card text-white bg-dark mb-3 mr-4" data-aos="zoom-in-up" data-aos-duration="5000"
+                  data-aos-offset="400" style="max-width: 18rem;height:15rem;box-shadow:  0 8px 16px 0 #424242;">
                   <div class="card-header">DATA STRUCTURES & ALGORITHMS</div>
                   <div class="card-body">
 
@@ -136,8 +138,8 @@
                       of DSA</p>
                   </div>
                 </div>
-                <div class="card text-white bg-dark mb-3 mr-4"
-                  style="max-width: 18rem;height:15rem;box-shadow:  0 8px 16px 0 #424242;">
+                <div class="card text-white bg-dark mb-3 mr-4" data-aos="zoom-in-up" data-aos-duration="5000"
+                  data-aos-offset="400" style="max-width: 18rem;height:15rem;box-shadow:  0 8px 16px 0 #424242;">
                   <div class="card-header">DEV OPS</div>
                   <div class="card-body">
 
@@ -148,10 +150,20 @@
               </div>
             </div>
           </div>
-          <div id="images" class="adjust_width" data-aos="fade-right" data-aos-duration="5000" data-aos-offset="200">
+          <div id="images" class="adjust_width">
             <div class="container mt-5">
-              <h1 style="font-weight: bold;">MY WORK</h1>
-              <a href="mywork.html"><button class="btn btn-dark my-5 ml-5">MY WORK</button></a>
+              <h1 style="font-weight: bold;" data-aos="fade-right" data-aos-duration="5000" data-aos-offset="200">MY
+                WORK</h1>
+
+              <div class="workDiv" data-aos="fade-up" data-aos-duration="5000" data-aos-offset="200">
+                <div class="workDiv2">
+
+                </div>
+                <div class="workbtn">
+                  <a href="mywork.html"><button class="btn">MY WORK</button></a>
+                </div>
+
+              </div>
             </div>
           </div>
         </div>
@@ -163,7 +175,7 @@
           <h1 class="mt-4 mb-4">Contact Us</h1>
         </div>
         <form name="form" id="form" method="post" action="contact.php" onsubmit="return validate()">
-          <div class="contact_us adjust_width" data-aos="fade-right" data-aos-duration="5000" data-aos-offset="200">
+          <div class="contact_us adjust_width" data-aos="fade-up" data-aos-duration="5000" data-aos-offset="200">
 
             <div class="container">
               <div class="row">
@@ -188,6 +200,20 @@
 
           </div>
         </form>
+        <div class="footer adjust_width">
+          <div class="footer-details">
+            <p>Designed By : Mahendra Sutar</p>
+            <p>Follow on :<img src="./icons/facebook.svg" width=" 15px" height="15px" />
+              <img src="./icons/instagram-sketched.svg" width=" 15px" height="15px" />
+              <img src="./icons/twitter.svg" width=" 15px" height="15px" /></p>
+          </div>
+          <div class="footer-image">
+            <img src="./icons/designer.svg" width="400" height="400" />
+
+          </div>
+
+
+        </div>
       </div>
     </div>
   </div>
@@ -213,12 +239,14 @@
 
     $(document).ready(function () {
       $('#menu_close').click(function () {
-        $('.mainpage,#about_us, .contact_us, #contact_des, #images').addClass("adjust_width");
+        $('.mainpage,#about_us, .contact_us, #contact_des, #images, .footer').addClass("adjust_width");
+        // $('.footer').addClass("footer-width");
       });
     });
     $(document).ready(function () {
       $('#menubar').click(function () {
-        $('.mainpage, #about_us, .contact_us, #contact_des, #images').removeClass("adjust_width");
+        $('.mainpage, #about_us, .contact_us, #contact_des, #images, .footer').removeClass("adjust_width");
+        // $('.footer').removeClass("footer-width");
       });
     });
 
@@ -290,10 +318,25 @@
     integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
   <script src="app.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" />
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"/>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"/>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"/>
-        
+
+  <!-- Footer Animation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+  <script src="footer-animation.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+
 </body>
+
 </HTML>
